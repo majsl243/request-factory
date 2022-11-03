@@ -1,13 +1,13 @@
 {
-  "name": "request-factory",
+  "name": "request-payload-factory",
   "version": "0.0.0",
-  "description": "",
+  "description": "It is inspired by nestjs Seeder with additional operations to facilitate API testing",
   "main": "index.js",
   "scripts": {
     "test": "env TS_NODE_PROJECT=\"tsconfig.json\" mocha --require ts-node/register 'test/**/*.ts'",
     "lint": "eslint --ignore-path .eslintignore --ext .ts ."
   },
-  "author": "",
+  "author": "Majdi Lada",
   "license": "ISC",
   "devDependencies": {
     "@types/chai": "^4.3.3",
@@ -48,5 +48,20 @@
       ],
       "space-unary-ops": 2
     }
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/majsl243/request-factory.git"
+  },
+  "keywords": [
+    "factory",
+    "requests"
+  ],
+  "bugs": {
+    "url": "https://github.com/majsl243/request-factory/issues"
+  },
+  "homepage": "https://github.com/majsl243/request-factory#readme"
 }
