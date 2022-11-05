@@ -2,8 +2,8 @@
     "compilerOptions": {
       "target": "es5",
       "lib": ["es5", "dom"],
-      "types": [ "node", "mocha"],
+      "types": [ "node"],
       "experimentalDecorators": true
     },
-    "include": ["**/*.ts"]
+    "include": ["**/*.ts", "src/index.js"]
   }

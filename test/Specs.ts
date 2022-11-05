@@ -1,4 +1,5 @@
 import { expect } from 'chai';
+import { describe } from 'mocha';
 import { Factory } from '../src/FactoryDecorator';
 import { Operations } from '../src/Operations';
 import { RequestFactory } from '../src/RequestFactory';
@@ -67,5 +68,4 @@ describe("Specs operations", () => {
 		expect(request).have.all.keys(["toe"]);
 		expect(request.toe).have.all.keys(["bar", "baz"]);
 	});
-
 });

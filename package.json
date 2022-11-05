@@ -1,6 +1,6 @@
 {
   "name": "request-payload-factory",
-  "version": "0.0.0",
+  "version": "0.0.4",
   "description": "It is inspired by nestjs Seeder with additional operations to facilitate API testing",
   "main": "index.js",
   "scripts": {
