@@ -22,7 +22,6 @@
   },
   "compilerOptions": {
     "types": [
-      "mocha",
       "node"
     ]
   },
