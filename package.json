@@ -2,7 +2,7 @@
   "name": "request-payload-factory",
   "version": "0.0.5",
   "description": "It is inspired by nestjs Seeder with additional operations to facilitate API testing",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "env TS_NODE_PROJECT=\"tsconfig.json\" mocha --require ts-node/register 'test/**/*.ts'",
     "lint": "eslint --ignore-path .eslintignore --ext .ts ."
