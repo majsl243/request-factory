@@ -7,7 +7,7 @@ This library is inspired by and based on [nestjs Seeder](https://github.com/edwa
 npm install request-payload-factory --save-dev
 
 ### 2- Define Model class
-The model class will represent the payload you want to generate. As an example, our model class will be "User", but it can be any class custom class.
+The model class will represent the payload you want to generate. As an example, our model class will be "User", but it can be any custom class.
 
 ```typescript
 import { Factory } from "request-payload-factory";
@@ -51,7 +51,7 @@ The value can be of any of the basic types ```string, number, boolean or date ``
 ```
 
 ### 3- Generating payload for a class:
-Using ```createForClass``` to create ```generate()``` that will return the complete payload based on ```@Factory``` decorator.
+Using ```createForClass``` to create ```generate()``` function that will return the complete payload based on ```@Factory``` decorator.
 
 ```typescript
 import { RequestFactory } from 'request-payload-factory';
@@ -60,7 +60,7 @@ const requestPayload = RequestFactory.createForClass(User).generate({});
 ```
 
 ### 4- Customizing generated payload:
-```generate()``` function take an optional parameter to specify the specs for the payload. Specs are set of defined rules to delete, add, or ovverirde a field in the generated payload.
+```generate()``` function takes an optional parameter to specify the specs for the payload. Specs are set of defined rules to delete, add, or override a field in the generated payload.
 
 #### There are 3 types of operations
 1. Delete  
@@ -68,7 +68,7 @@ const requestPayload = RequestFactory.createForClass(User).generate({});
 2. Override  
    - Takes one parameter to specify the new value
 3. Add
-   - An alias to ovverride and behaves exactly the same
+   - An alias to override and behaves exactly the same
     
 #### Example:    
 
@@ -125,7 +125,7 @@ export class Trip {
     @Factory("Trip Name")
     name: string;
     
-    @Factory("Trip organizaer name")
+    @Factory("Trip organizer name")
     organizer: string;
     
     @Factory([
