@@ -87,6 +87,7 @@ const requestPayload =
 ### Field of type of another custom Class
 We will refer to the following two classes as an example for advanced usage, but you can apply it to any custom class:
 
+#### Example 1:
 ```typescript
 import { Operations, RequestFactory } from 'request-payload-factory';
 
@@ -112,7 +113,42 @@ export class Attraction {
 }
 
 const requestPayload = RequestFactory.createForClass(Trip).generate({});
-
 ```
 
-  
+#### Example 2:
+In example 1, Attraction could have been modified as well be generation specs
+
+```typescript
+import { Operations, RequestFactory } from 'request-payload-factory';
+
+export class Trip {
+    @Factory("Trip Name")
+    name: string;
+    
+    @Factory("Trip organizaer name")
+    organizer: string;
+    
+    @Factory([
+    RequestFactory.createForClass(Attraction).generate({})
+    ])
+    attraction: Attraction[];
+}
+
+export class Attraction {
+    @Factory("Attraction Name")
+    name: string;
+    
+    @Factory("Details of the attraction goes here")
+    details: string;
+}
+
+const requestPayload = 
+    RequestFactory.createForClass(Trip).generate({
+        attraction: Operations.Override(
+            RequestFactory.createForClass(Attraction).generate({
+                location: Operations.Add("somewhere"),
+                details: Operations.Delete
+                advices: Operations.Override("some advices goes here")
+            })
+    });
+```  
