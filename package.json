@@ -60,7 +60,9 @@
     "requests",
     "API",
     "API Testing",
-    "nestJS"
+    "nestJS",
+    "decorators",
+    "Payload Generation"
   ],
   "bugs": {
     "url": "https://github.com/majsl243/request-factory/issues"

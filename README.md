@@ -95,7 +95,7 @@ export class Trip {
     @Factory("Trip Name")
     name: string;
     
-    @Factory("Trip organizaer name")
+    @Factory("Trip organizer name")
     organizer: string;
     
     @Factory([
