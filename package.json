@@ -1,7 +1,7 @@
 {
   "name": "request-payload-factory",
-  "version": "0.0.6",
-  "description": "It is inspired by nestjs Seeder with additional operations to facilitate API testing",
+  "version": "0.0.8",
+  "description": "It is inspired by nestjs Seeder with additional operations to generate payloads API testing",
   "main": "src/index.js",
   "scripts": {
     "test": "env TS_NODE_PROJECT=\"tsconfig.json\" mocha --require ts-node/register 'test/**/*.ts'",
