@@ -1,6 +1,6 @@
 # Request Factory
 ## About
-This library is inspired by and based on [nestjs Seeder](https://github.com/edwardanthony/nestjs-seeder) with customizations to support payloads generation for API testing. The customization includes adding few operations to remove, add and edit elements from payloads as required.
+This library is inspired by and based on [nestjs Seeder](https://github.com/edwardanthony/nestjs-seeder) ([MIT](https://github.com/edwardanthony/nestjs-seeder/blob/master/LICENSE)) with customizations on Factory to support payloads generation for API testing. The customization includes adding few operations to remove, add and edit elements from payloads as required.
 
 ## How to Use?
 ### 1- Install the package
